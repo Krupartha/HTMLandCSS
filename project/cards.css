@@ -1,0 +1,388 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    column-gap: 20px;
+    height: 90px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(198, 191, 191);
+    z-index: 100;
+
+
+
+
+}
+
+.left-section{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    width: 300px;
+    column-gap: 50px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.menu{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.header-hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-tooltip{
+    position: absolute;
+    bottom: -18px;
+    right: -18px;
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    padding: 2px 3px 2px 3px;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.header-hover:hover{
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.header-hover:hover .menu-tooltip{
+    opacity: 1;
+}
+
+
+.logo{
+    width: 150px;
+}
+
+.middle-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 700px;
+}
+
+.search-bar{
+    flex: 1;
+    width: 0;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 23px;
+    border-width: 1px;
+    border-color:  black;
+    box-shadow: inset 3px 3px 3px rgb(206, 203, 203);
+    
+}
+
+.search-bar::placeholder{
+    font-size: 23px;
+    color: rgb(158, 151, 141);
+
+}
+
+.search-button{
+    width: 80px;
+    height: 50px;
+    margin-left: -1px;
+}
+
+.search-tooltip{
+    position: absolute;
+    bottom: -38px;
+    right: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    padding: 3px 4px 3px 4px;
+    pointer-events: none;
+    opacity: 0;
+    
+}
+
+.search-tooltip:hover{
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.header-hover:hover .search-tooltip{
+    opacity: 1;
+}
+
+
+
+
+.search-icon{
+    width: 30px;
+}
+
+.voice-search-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 20px;
+    border: none;
+}
+
+.voice-tooltip{
+    position: absolute;
+    color: white;
+    bottom: -40px;
+    right: -25px;
+    width: 90px;
+    background-color: black;
+    border-radius: 2px;
+    padding: 4px 5px 4px 5px;
+    pointer-events: none;
+    opacity: 0;
+    
+}
+
+.voice-tooltip:hover{
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.header-hover:hover .voice-tooltip{
+    opacity: 1;
+}
+
+.voice-search-icon{
+    width: 30px;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    
+}
+
+.upload-icon{
+    width: 35px;
+}
+
+.upload-tooltip{
+    position: absolute;
+    color: white;
+    bottom: -40px;
+    background-color: black;
+    border-radius: 2px;
+    padding: 4px 5px 4px 5px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.upload-tooltip:hover{
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.header-hover:hover .upload-tooltip{
+    opacity: 1;
+}
+
+.apps-icon{
+    width: 35px;
+}
+
+.apps-tooltip{
+    display: flex;
+    position: absolute;
+    color: white;
+    bottom: -50px;
+    background-color: black;
+    width: 70px;
+    border-radius: 2px;
+    padding: 4px 5px 4px 5px;
+    pointer-events: none;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.apps-tooltip:hover{
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.header-hover:hover .apps-tooltip{
+    opacity: 1;
+}
+
+
+.notifications-icon{
+    width: 35px;
+}
+
+.notifications{
+    position: relative;
+
+}
+
+.number{
+    position: absolute;
+    background-color: red;
+    font-size: 18px;
+    align-items: center;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    padding-top: 2px;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 12px;
+    top: 0;
+    right: -3px;
+}
+
+.profile-icon{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+.gridmain{
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    column-gap: 23px;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+
+@media (max-width: 855px) {
+    .gridmain {
+        grid-template-columns: 325px 325px;
+    }
+}
+
+@media (min-width: 860px) and (max-width: 1210px){
+    .gridmain{
+        grid-template-columns:  325px 325px 325px;
+    }
+}
+
+@media (min-width: 1276px) {
+    .gridmain {
+        grid-template-columns: 325px 325px 325px 325px;
+    }
+}
+
+
+.grid{
+    display: grid;
+    row-gap: 75px;
+    grid-template-rows: 120px 120px;
+    width: 330px;
+    
+}
+
+.thumbnailrow{
+    position: relative;
+    background-color: brown;
+    height: 180px;   
+
+}
+
+.time{
+    position: absolute;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    font-family: arial;
+    font-weight: bold;
+    height: 20px;
+    padding: 4px 4px 1px 4px;
+    width: 40px;
+    right: 6px;
+    bottom: 5px;
+    border-radius: 3px;
+    opacity: 0.85;
+}
+
+.thumbnail{
+    width: 330px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.grid2{
+    display: grid;
+    margin-top: -10px;
+    grid-template-columns:53px 60px;
+    
+}
+
+.channelcolumn{
+    position: relative;
+    align-items: center;
+}
+
+.channel{
+    width: 45px;
+    border-radius: 50px;
+    position: absolute;
+    top: 18px;
+    left: 2px;
+}
+
+.video-info{
+    display: flex;
+    flex-direction: column;
+    align-items:top;
+    padding-left: 7px;
+    width: 270px;
+    height: 130px;
+   
+}
+
+.video-title{
+    font-family: arial;
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.video-author{
+    font-size: 15px;
+    font-family: arial;
+    color: grey;
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.video-stats{
+    font-size: 15px;
+    color: grey;
+    font-family: arial;
+    margin: 0;
+}

@@ -1,0 +1,123 @@
+<html>
+<head>
+<style>
+    .card1,.card2,.card3{
+        display: grid;
+        grid-template-rows: 1fr 80px;
+        row-gap: 7px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+
+    .image1{
+       width: 100px;
+       height: 100px;
+       object-fit: cover;
+       object-position: center;
+    }
+
+    .name{
+        font-family: arial;
+        font-size: 11px;
+        font-weight: bold;
+        margin-bottom: 3px;
+        margin-left: 5px;
+    }
+
+    .mutual{
+        font-size: 9px;
+        color: grey;
+        margin-bottom: 3px;
+        margin-left: 5px;
+    }
+
+    .button{
+        color: white;
+        background-color: rgb(34, 132, 202);
+        border: none;
+        border-radius: 2px;
+        margin-left: 5px;
+        margin-bottom: 4px;
+        font-size: 9px;
+        height: 20px;
+        width: 65px;
+    }
+
+    .grid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    column-gap: 20px;
+    }
+
+    .grid2{
+        display: grid;
+        margin-left: 3px;
+        row-gap: 10px;
+        height: 10px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+</style>
+</head>
+<body>
+<div class="grid">   
+<div class="card1">
+    <div>
+         <img class="image1" src="darling.jpg">
+    </div>
+    <div class="grid2">
+        <div class="name">
+        Prabhas
+        </div>
+        <div class="mutual">
+        3K mutual friends
+        </div>
+        <div>
+        <button class="button">
+        Add Friend
+        </button>
+        </div>
+
+    </div>
+</div>
+<div class="card2">
+    <div> 
+         <img class="image1" src="ntr.jpg">
+    </div>
+    <div class="grid2">
+        <div class="name">
+        NTR
+        </div>
+        <div class="mutual">
+        4K mutual friends
+        </div>
+        <div>
+        <button class="button">
+        Add Friend
+        </button>
+        </div>
+
+    </div>
+</div>
+<div class="card3">
+    <div>
+         <img class="image1" src="pk.jpg">
+    </div>
+    <div class="grid2">
+        <div class="name" >
+        Pawan Kalyan
+        </div>
+        <div class="mutual">
+        5K mutual friends
+        </div>
+        <div>
+        <button class="button">
+        Add Friend
+        </button>
+        </div>
+
+    </div>
+</div>
+</div> 
+</body>
+</html>

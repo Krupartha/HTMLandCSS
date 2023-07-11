@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <style>
+        .body{
+            margin: 0;
+        }
+
+        .left{
+            display: flex;
+            position: fixed;
+            width: 80px;
+            height: 100%;
+            flex-direction: column;
+            background-color: rgb(41, 42, 43);
+            padding: 15px;
+            z-index: 100;
+        }
+
+        .image{
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        .right{
+            display: flex;
+            position: fixed;
+            width: 250px;
+            height: 100%;
+            flex-direction: column;
+            background-color: rgb(57, 60, 62);
+            padding: 15px;
+            margin-left: 100px;
+        }
+
+        .info-bar{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .info{
+            font-size: 20px;
+            margin-left: 20px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .add{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .new{
+            color: rgb(173, 173, 173);
+            font-size: 25px;
+            font-family: arial;
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .update{
+            color: rgb(173, 173, 173);
+            font-size: 25px;
+            font-family: arial;
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .faq{
+            color: rgb(173, 173, 173);
+            font-size: 25px;
+            font-family: arial;
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+        }
+
+
+
+
+
+        
+
+
+    </style>
+    <body class="body">
+        <div class="div">
+            <div class="left">
+                <img class="image" src="card/darling.jpg">
+                <img class="image" src="card/ntr.jpg">
+                <img class="image" src="card/pk.jpg">
+
+            </div>
+            <div class="right">
+                <div class="info-bar">
+                    <div class="info">
+                        INFO
+                    </div>
+
+                    <div class="add">
+                        +
+                    </div>
+                </div>
+
+                <div class="new">
+                    # new-videos
+                </div>
+
+                <div class="update">
+                    # updates
+                </div>
+
+                <div class="faq">
+                    # faq
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+.div{
+    width: 400px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+.darling{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10000px;
+    vertical-align: middle;
+}
+
+.text{
+      width: 200px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      padding-left: 12px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      vertical-align: middle;
+      border-radius: 30px;
+      border-width: 1px;
+      border: none;
+}
+
+.button{
+     color: white;
+     background-color: rgb(14, 172, 197);
+     width: 60px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 12px;
+     font-weight: bold;
+     padding-left: 6px;
+     padding-top: 6px;
+     padding-bottom: 6px;
+     vertical-align: middle;
+     border-radius: 30px;
+     border-width: 1px;
+     border: none;
+}
+
+.div2{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+
+}
+
+.img2{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.oli{
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.mutual{
+    color: grey;
+}
+
+.but{
+    color: white;
+    background-color: rgb(17, 124, 173);
+    border: none;
+}
