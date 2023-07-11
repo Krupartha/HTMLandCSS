@@ -121,7 +121,7 @@
     transition: 0.7s;
 }
 
-.header-hover:hover .search-tooltip{
+.search-button .header-hover:hover .search-tooltip{
     opacity: 1;
 }
 
